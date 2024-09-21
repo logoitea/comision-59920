@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: #0D0D0D;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: "caviar";
+}
+
+.nav-bar li{
+    margin: 10px;
+}
+
+.nav-bar a{
+    color: #D9B471;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+@font-face{
+    font-family: "kaushan";
+    src: url("../assets/tipografias/KaushanScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "caviar";
+    src: url(../assets/tipografias/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: "marcellus";
+    src: url(../assets/tipografias/Marcellus-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ananda";
+    src: url(../assets/tipografias/Ananda\ Personal\ Use.ttf);
+}
+
+main{
+    background-color: #0D0D0D;
+}
+
+.banner{
+    width: 100%;
+    height: 1040px;
+    background-image: url("../assets/img/pole-banner-big.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: #0D0D0D;
+    /*align-items: center;*/
+    justify-content: center;
+    /*text-align: center;*/
+    position: relative;
+}
+
+main section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+main section div h1{
+    color: #0D0D0D;
+    font-family: "kaushan";
+    font-size: 80px;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem;
+    margin: 0;
+}
+
+main section div p{
+    color: #0D0D0D;
+    font-family: "ananda";
+    text-align: left;
+    align-items: end;
+    justify-content: left;  
+}
+
+.logo{
+    width: 200px;
+    justify-content: right;
+    align-content: center;
+}
+
+h3{
+    font-family: "caviar";
+    font-size: 30px;
+    color: #D9B471;
+}
+
+h4{
+    font-family: "caviar";
+    font-size: 20px;
+    color: #D9B471;
+}
+
+h5{
+    font-family: "caviar";
+    font-size: 15px;
+    color: #D9B471;
+}
+
+h6{
+    font-family: "marcellus";
+    font-size: 20px;
+    color: #be964a;
+}
+
+section article p{
+    font-family: "caviar";
+    font-size: 15px;
+    color: #D9B471;
+}
+
+.article-who{
+    background-color: #0D0D0D;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-who h3{
+    font-family: "caviar";
+    font-size: 100px;
+    text-align: center;
+}
+
+.article-who div{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.article-who div img{
+    width: 25%; 
+    height: auto; 
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    justify-content: left;
+}
+
+.article-who div p{
+    font-family: "caviar";
+    font-size: 15px;
+    color: #D9B471;
+    width: 75%; 
+    padding-left: 20px; 
+}
+.article-disciplines h4 {
+    font-family: "caviar";
+    font-size: 30px;
+    color: #D9B471;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.container-disciplines {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Space between discipline items */
+    padding: 20px;
+}
+
+.disciplines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Adjust this value as needed */
+}
+
+.disciplines img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.disciplines p {
+    font-family: "marcellus";
+    font-size: 1.25rem; /* Adjusted for better readability */
+    color: #D9B471;
+    text-align: center;
+    justify-content: center;
+}
+/*.article2 h4{
+    font-family: "caviar";
+    font-size: 30px;
+    color: #D9B471;
+    text-align: center;
+}
+
+.article2 div img{
+    justify-content: center;
+}
+.pole-class{
+    width: 100px;
+    align-items: start;
+    justify-items: left;
+}
+
+.container-disciplinas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 12.5rem;
+    height: 12.5rem;
+    gap: 1.25rem;
+    justify-content: center;
+    padding: 100px;
+}
+
+.disciplina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.disciplina img{
+    max-width: 100%;
+    height: max-content;
+}
+
+.disciplina p{
+    font-family: "marcellus";
+    font-size: 3.125rem;
+    color: #D9B471;
+}
+*/
+footer{
+    display: flex;
+    flex-direction: row;   
+    background-color: #D9B471;
+    width: 100%;
+    height: 100px;
+    justify-items: auto;
+}
+
+.logof footer div img{
+    justify-content: left;
+    width: auto;
+    height: 60%;
+}
+
+.wspf footer div div img{
+    justify-content: right;
+    width: auto;
+    height: 60%;
+}
+
+.igf footer div div img{
+    justify-content: right;
+    width: auto;
+    height: 60%;
+}
