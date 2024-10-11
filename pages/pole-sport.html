@@ -3,45 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>PoleSport</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="nav">
-                <ul class="nav-bar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">¿Qué es el Pole Sport?</a></li>
-                    <li><a href="./estudios-instrus.html">Estudios e Instructorados</a></li>
-                    <li><a href="./competencias.html">Competencias</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <header class="container-fluid">
+                <nav class="nav d-flex justify-content-center gap-4">
+                    <ul class="nav-bar">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">¿Qué es el Pole Sport?</a></li>
+                        <li><a href="./estudios-instrus.html">Estudios e Instructorados</a></li>
+                        <li><a href="./competencias.html">Competencias</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
         </header>
-        <main>
+        <main class="container-fluid">
             <h3>¿Qué es el Pole Sport?</h3>
             <section class="pole-sport-cards">
-                <div class="card1">
-                    <img src="../assets/img/pole-sport1.jpg" alt="pole-sport1">
-                    <p>El pole sport es una disciplina que combina fuerza, flexibilidad y agilidad, utilizando una barra vertical como principal herramienta. A diferencia de lo que muchos pueden pensar, el pole sport se enfoca en el aspecto deportivo y atlético, dejando de lado connotaciones sensuales o artísticas. Los atletas realizan una serie de movimientos y figuras que requieren gran control corporal, resistencia y precisión, con el objetivo de completar rutinas coreografiadas en las que demuestran su habilidad para ejecutar trucos y transiciones de manera fluida.</p>
+                <div class="card1 row">
+                    <div class="col-5">
+                        <img src="../assets/img/pole-sport1.jpg" class="object-fit-cover rounded img-fluid" alt="Un hombre haciendo una figura horizantal en un pole, con un cielo y mar de fondo">
+                    </div>
+                    <div class="col-7">
+                        <p>El pole sport es una disciplina que combina fuerza, flexibilidad y agilidad, utilizando una barra vertical como principal herramienta. A diferencia de lo que muchos pueden pensar, el pole sport se enfoca en el aspecto deportivo y atlético, dejando de lado connotaciones sensuales o artísticas. Los atletas realizan una serie de movimientos y figuras que requieren gran control corporal, resistencia y precisión, con el objetivo de completar rutinas coreografiadas en las que demuestran su habilidad para ejecutar trucos y transiciones de manera fluida.</p>
+                    </div>    
                 </div>
-                <div class="card2">
-                    <img src="../assets/img/pole-sport2.jpeg" alt="pole-sport2">
-                    <p>Una de las características más importantes del pole sport es el desarrollo de la fuerza física. Los movimientos y trucos implican cargar el peso del propio cuerpo mientras se realizan giros, inversiones y acrobacias. Esto requiere un trabajo continuo de los músculos de los brazos, piernas, abdomen y espalda, lo que lo convierte en un entrenamiento completo. Además, esta disciplina también pone énfasis en la flexibilidad y la movilidad articular, esenciales para realizar figuras elegantes y evitar lesiones.</p>
+                <div class="card2 row">
+                    <div class="col-5">
+                        <img src="../assets/img/pole-sport2.jpeg" class="object-fit-cover rounded img-fluid" alt="Mujer de estilo urbano que está haciendo una figura bandera en un pole en un lugar de construcción">
+                    </div>
+                    <div class="col-7">
+                        <p>Una de las características más importantes del pole sport es el desarrollo de la fuerza física. Los movimientos y trucos implican cargar el peso del propio cuerpo mientras se realizan giros, inversiones y acrobacias. Esto requiere un trabajo continuo de los músculos de los brazos, piernas, abdomen y espalda, lo que lo convierte en un entrenamiento completo. Además, esta disciplina también pone énfasis en la flexibilidad y la movilidad articular, esenciales para realizar figuras elegantes y evitar lesiones.</p>
+                    </div>
                 </div>
-                <div class="card3">
-                    <img src="../assets/img/pole-sport3.jpg" alt="pole-sport3">
-                    <p>El aspecto competitivo del pole sport ha ganado popularidad en los últimos años, con competencias oficiales a nivel nacional e internacional, incluso con aspiraciones de ser incluido en los Juegos Olímpicos. En las competiciones, los atletas son evaluados por la ejecución técnica, dificultad de los movimientos y la creatividad en la coreografía. Es un deporte que desafía los límites físicos y mentales, promoviendo el empoderamiento y la autoconfianza de quienes lo practican.</p>
+                <div class="card3 row">
+                    <div class="col-5">    
+                        <img src="../assets/img/pole-sport3.jpg" class="object-fit-cover rounded img-fluid" alt="Mujer haciendo una figura de pole con un fondo verde agua">
+                    </div>  
+                    <div class="col-7">
+                        <p>El aspecto competitivo del pole sport ha ganado popularidad en los últimos años, con competencias oficiales a nivel nacional e internacional, incluso con aspiraciones de ser incluido en los Juegos Olímpicos. En las competiciones, los atletas son evaluados por la ejecución técnica, dificultad de los movimientos y la creatividad en la coreografía. Es un deporte que desafía los límites físicos y mentales, promoviendo el empoderamiento y la autoconfianza de quienes lo practican.</p>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logo">
+        <footer class="container-fluid">
+            <div class="footer-content row">
+                <div class="footer-logo col-2">
                     <img src="../assets/img/logo-circle.png" alt="logo" class="logofooter">
+                </div>
+                <div class="col-6">
                     <p>Somos Polers</p>
                 </div>
-                <div class="footer-social">
+                <div class="footer-social col-4">
                     <a href="#" class="whatsapp">
                         <img src="../assets/img/whatsapp.png" alt="whatsapp">
                     </a>
@@ -51,6 +66,8 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         <aside></aside>
     </body>
 </html>
