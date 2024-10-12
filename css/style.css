@@ -12,6 +12,7 @@
 
 .nav-bar{
     display: flex;
+    flex-direction: row;
     list-style: none;
     justify-content: center;
     padding: 0;
@@ -26,11 +27,52 @@
 .nav-bar a{
     color: #D9B471;
     text-decoration: none;
-    display: block;
+    display: flex;
     font-size: 20px;
     padding: 10px;
 }
 
+@media(max-width: 1024px){
+
+
+
+}
+
+@media(max-width: 768px){
+
+    .article-who{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-disciplines{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+@media(max-width: 425px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .banner{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+}
 
 @font-face{
     font-family: "kaushan";
@@ -84,11 +126,11 @@ main{
     grid-row: 1;
     grid-column: 6;
     object-fit: contain;
-    order: 2;
+    order: 1;
     padding: 3.125rem;
 }
 
-.banner h1{ 
+#page-name{ 
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 3;
@@ -98,6 +140,7 @@ main{
     font-size: 5rem;
     justify-self: center;
     align-self: center;
+    order: 2;
 }
 
 .banner p{
@@ -132,33 +175,36 @@ main{
     align-items:end;
 }
 
-h3{
+h1{
     font-family: "caviar";
-    font-size: 30px;
+    font-size: 2.5rem;
     color: #D9B471;
     text-align: center;
+    padding: 1.25rem;
 }
 
-h4{
+h2{
     font-family: "caviar";
-    font-size: 25px;
-    color:#0D0D0D;
+    font-size: 1.875rem;
+    color:#D9B471;
     text-align: center;
-    padding: 5px;
+    padding: 1.25rem;
 }
 
-h5{
+h3{
     font-family: "caviar";
-    font-size: 15px;
+    font-size: 1.5625rem;
     color: #D9B471;
     text-align: center;
     gap: 1.25rem;
+    padding: 1.25rem;
 }
 
-h6{
+h4{
     font-family: "marcellus";
     font-size: 20px;
     color: #be964a;
+    padding: 1.25rem;
 }
 
 section article p{
@@ -396,25 +442,153 @@ section article p{
 }
 
 
-.estudios-listado{
+.container-estudios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.875rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.125rem;
+}
+
+.container-instrus{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    padding: 1.875rem;
 }
 
-.estudios-listado p{
+.container-instrus p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.875rem;
+    width: 31.25rem;
+}
+
+.card-container p{
     font-family: "marcellous";
     font-size: .9375rem;
     color: #D9B471;
     text-align: center;
-    padding: .625rem;
+    padding: 1.25rem;
 }
 
+.estudios-banner {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.estudios-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media(max-width: 1024px){
+    .estuios-banner{
+        max-width: 90%;
+}
+.container-estudios {
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: calc(50% - 20px);
+    padding: 2rem;
+}
+
+.container-instrus p {
+    width: 100%;
+    max-width: 25rem;
+}
+}
+
+@media(max-width: 768px){
+
+    .estuios-banner{
+        max-width: 95%;
+}
+
+.container-estudios {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.5rem;
+}
+
+.container-instrus p {
+    padding: 1.25rem;
+}
+
+.card-container p {
+    font-size: 0.875rem;
+}
+
+    .formulario{
+        width: 200px;
+        min-width: 200px;
+}
+
+    .formulario input{
+        width: 50%;
+        min-width: 100px;
+}
+
+    .formulario label{
+        width: 50%;
+        min-width: 100px;    
+}
+
+.contacto img{
+    min-width: 100px;
+}
+}
+
+@media(max-width: 425px){
+    
+    .estuios-banner{
+        max-width: 100%;
+}   
+
+.container-estudios,
+    .container-instrus {
+        padding: 1rem;
+    }
+
+    .card-container {
+        padding: 1rem;
+    }
+
+    .container-instrus p {
+        padding: 1rem;
+    }
+
+    .card-container p {
+        font-size: 0.8125rem;
+    }
+}
+    
 .contacto{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 6.25rem;
 }
 
 .contacto img{
@@ -426,22 +600,24 @@ section article p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     font-family: "caviar";
     color: #D9B471;
     font-size: 1.25rem;
+    padding: .625rem 15.625rem 12.5rem 15.625rem;
 }
 
 .formulario form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    padding: 1.25rem;
 }
 
 .formulario label {
-    text-align: center;
-    padding: .3125rem;
+    text-align: left;
+    padding: 1.25rem;
 }
 
 .formulario input {
@@ -451,7 +627,18 @@ section article p{
     color: #D9B471;
     font-family: "caviar", sans-serif;
     font-size: 1rem;
-    align-items: center;
+    align-items: left;
+    padding: 1.25rem;
+    margin: bottom .625rem;
+}
+
+input[type="submit"]{
+    box-sizing: border-box;
+    padding-top: 3.125rem;
+    padding: 1.875rem;
+    background-color: #be964a;
+    color: #0D0D0D;
+    margin: 1.875rem 0rem;
 }
 
 footer{
@@ -462,6 +649,7 @@ footer{
 
 .footer-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
