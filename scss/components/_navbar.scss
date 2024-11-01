@@ -1,0 +1,24 @@
+nav{
+    background-color: #0D0D0D;
+    padding: 10px;
+    width: 100%;
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        font-family: "caviar";
+        li{
+            margin: 10px;
+            a{
+                color: #D9B471;
+                text-decoration: none;
+                display: flex;
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}

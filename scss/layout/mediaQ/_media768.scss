@@ -1,0 +1,54 @@
+@media(max-width: 768px){
+
+    .estuios-banner{
+        max-width: 95%;
+}
+
+.article-who{
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-disciplines{
+    flex-direction: column;
+    align-items:center;
+}
+
+.container-estudios {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.5rem;
+}
+
+.container-instrus p {
+    padding: 1.25rem;
+}
+
+.card-container p {
+    font-size: 0.875rem;
+}
+
+    .formulario{
+        width: 200px;
+        min-width: 200px;
+}
+
+    .formulario input{
+        width: 50%;
+        min-width: 100px;
+}
+
+    .formulario label{
+        width: 50%;
+        min-width: 100px;    
+}
+
+.contacto img{
+    min-width: 100px;
+}
+}

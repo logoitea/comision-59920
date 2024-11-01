@@ -1,0 +1,42 @@
+@media(max-width: 425px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .banner{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+    
+    .estuios-banner{
+        max-width: 100%;
+    }   
+
+    .container-estudios, .container-instrus {
+        padding: 1rem;
+    }
+
+    .card-container {
+        padding: 1rem;
+    }
+
+    .container-instrus p {
+        padding: 1rem;
+    }
+
+    .card-container p {
+        font-size: 0.8125rem;
+    }
+}

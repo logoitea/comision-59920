@@ -1,0 +1,18 @@
+@media(max-width: 1024px){
+    .estuios-banner{
+        max-width: 90%;
+}
+.container-estudios {
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: calc(50% - 20px);
+    padding: 2rem;
+}
+
+.container-instrus p {
+    width: 100%;
+    max-width: 25rem;
+}
+}
