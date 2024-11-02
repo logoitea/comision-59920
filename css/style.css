@@ -123,7 +123,7 @@ div {
     justify-content: left; }
 
 section article {
-  font-family: "caviar";
+  font-family: 'caviar';
   font-size: 2.5rem;
   color: #D9B471;
   text-align: center;
@@ -162,6 +162,203 @@ section {
           color: #D9B471;
           text-align: center;
           justify-content: center; }
+
+.main-pole-sport h1 {
+  font-family: "caviar";
+  font-size: 2.5rem;
+  color: #D9B471;
+  text-align: center;
+  padding: 1.25rem; }
+  .main-pole-sport h1 section {
+    width: 100%;
+    height: 100%;
+    gap: 20px; }
+    .main-pole-sport h1 section div {
+      align-items: center;
+      padding: 6.25rem; }
+      .main-pole-sport h1 section div p {
+        font-family: "caviar";
+        font-size: 1.5625rem;
+        color: #D9B471; }
+
+.main-estudios-instrus {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .main-estudios-instrus .estudios-banner h1 {
+    font-family: 'caviar';
+    font-size: 2.5rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+    .main-estudios-instrus .estudios-banner h1 div img {
+      width: 100%;
+      height: auto;
+      display: block; }
+  .main-estudios-instrus section h1 {
+    font-family: 'caviar';
+    font-size: 2.5rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+    .main-estudios-instrus section h1 img {
+      width: 100%;
+      height: auto;
+      display: block; }
+
+main section h2 {
+  font-family: "caviar";
+  font-size: 1.875rem;
+  color: #D9B471;
+  text-align: center;
+  padding: 1.25rem; }
+  main section h2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.875rem; }
+    main section h2 div .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3.125rem; }
+      main section h2 div .card-container h3 {
+        font-family: "caviar";
+        font-size: 1.5625rem;
+        color: #D9B471;
+        text-align: center;
+        gap: 1.25rem;
+        padding: 1.25rem; }
+        main section h2 div .card-container h3 p {
+          font-family: "marcellous";
+          font-size: .9375rem;
+          color: #D9B471;
+          text-align: center;
+          padding: 1.25rem; }
+
+main section .instrus-listado h2 {
+  font-family: "caviar";
+  font-size: 1.875rem;
+  color: #D9B471;
+  text-align: center;
+  padding: 1.25rem; }
+  main section .instrus-listado h2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.875rem; }
+    main section .instrus-listado h2 div article div h3 {
+      font-family: "caviar";
+      font-size: 1.5625rem;
+      color: #D9B471;
+      text-align: center;
+      gap: 1.25rem;
+      padding: 1.25rem; }
+      main section .instrus-listado h2 div article div h3 p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.875rem;
+        width: 31.25rem; }
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem; }
+  main section h1 {
+    font-family: 'caviar';
+    font-size: 2.5rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+    main section h1 div img {
+      width: 100%;
+      height: 50rem;
+      object-fit: cover; }
+
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem; }
+  main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    width: 12.5rem; }
+    main section div img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px; }
+      main section div img p {
+        font-family: "marcellus";
+        font-size: 1.25rem;
+        color: #D9B471;
+        text-align: center;
+        justify-content: center; }
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.25rem; }
+  main section h1 {
+    font-family: 'caviar';
+    font-size: 2.5rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+    main section h1 div img {
+      width: 100%;
+      height: fit-content; }
+
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-family: "caviar";
+  color: #D9B471;
+  font-size: 1.25rem;
+  padding: .625rem 15.625rem 12.5rem 15.625rem; }
+  main section form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1.25rem; }
+    main section form label {
+      text-align: left;
+      padding: 1.25rem; }
+      main section form label input {
+        width: 50%;
+        border: 1px solid #D9B471;
+        background-color: #1a1a1a;
+        color: #D9B471;
+        font-family: "caviar", sans-serif;
+        font-size: 1rem;
+        align-items: left;
+        padding: 1.25rem;
+        margin: bottom .625rem; }
+
+main section form input[type="submit"] {
+  box-sizing: border-box;
+  padding-top: 3.125rem;
+  padding: 1.875rem;
+  background-color: #be964a;
+  color: #0D0D0D;
+  margin: 1.875rem 0rem; }
 
 nav {
   background-color: #0D0D0D;

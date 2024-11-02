@@ -1,12 +1,26 @@
-main{
+.main-estudios-instrus{
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     overflow: hidden;
-    section{
+    .estudios-banner{
         h1{
             @include h1;
-            img{
+        div{
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        }
+    }
+
+    section {
+        h1 {
+            @include h1;
+
+            img {
                 width: 100%;
                 height: auto;
                 display: block;
@@ -15,25 +29,29 @@ main{
     }
 }
 
-main{
-    section{
-        h2{
+main {
+    section {
+        h2 {
             @include h2;
-            div{
+
+            div {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 gap: 20px;
                 padding: 1.875rem;
-                .card-container{
+
+                .card-container {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     padding: 3.125rem;
-                    h3{
+
+                    h3 {
                         @include h3;
-                        p{
+
+                        p {
                             font-family: "marcellous";
                             font-size: .9375rem;
                             color: #D9B471;
@@ -47,29 +65,31 @@ main{
     }
 }
 
-main{
-    section{
-        .instrus-listado{
-            h2{
+main {
+    section {
+        .instrus-listado {
+            h2 {
                 @include h2;
-                div{
+
+                div {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     gap: 20px;
                     padding: 1.875rem;
-                    article{
-                        div{
-                            h3{
-                                @include h3{
-                                    p{
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        justify-content: center;
-                                        padding: 1.875rem;
-                                        width: 31.25rem;
-                                    }
+
+                    article {
+                        div {
+                            h3 {
+                                @include h3;
+
+                                p {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: 1.875rem;
+                                    width: 31.25rem;
                                 }
                             }
                         }
