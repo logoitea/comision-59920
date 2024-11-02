@@ -1,11 +1,11 @@
 main{
     width: 100%;
-    max-width: 1024px;
     margin: 0 auto;
     overflow: hidden;
     section{
         h1{
             @include h1;
+        }
             img{
                 width: 100%;
                 height: auto;
@@ -13,7 +13,7 @@ main{
             }
         }
     }
-}
+
 
 main{
     section{
@@ -61,7 +61,7 @@ main{
                     article{
                         div{
                             h3{
-                                @include h3{
+                                @include h3;
                                     p{
                                         display: flex;
                                         flex-direction: column;
@@ -78,4 +78,3 @@ main{
             }
         }
     }
-}
