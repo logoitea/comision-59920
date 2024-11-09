@@ -56,107 +56,97 @@ footer div .footer-social {
       height: 100%;
       object-fit: contain; }
 
-main .banner {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  width: 100vw;
-  height: 1600px;
-  background-image: url("../assets/img/pole-banner-big.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  main .banner img {
-    width: 100%;
-    grid-row: 1;
-    grid-column: 6;
-    object-fit: contain;
-    order: 1;
-    padding: 3.125rem; }
-
-#page-name {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  color: #0D0D0D;
-  font-family: "kaushan";
-  font-size: 5rem;
-  justify-self: center;
-  align-self: center;
-  order: 2; }
-
-.banner p {
-  grid-row-start: 7;
-  grid-row-end: 8;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  color: #0D0D0D;
-  font-family: "ananda";
-  font-size: 2.5rem;
-  justify-self: left;
-  padding: 4.375rem; }
-
-main {
+.main-index {
   background-color: #0D0D0D; }
-  main section .article-who {
-    background-color: #0D0D0D; }
-    main section .article-who article {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%; }
-
-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%; }
-  div .pole-class {
-    width: 25%;
-    height: auto;
-    object-fit: cover;
-    padding: 1.5625rem;
-    margin: 1.5625rem;
-    justify-content: left; }
-
-section article {
-  font-family: 'caviar';
-  font-size: 2.5rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-
-section article p {
-  font-family: "caviar";
-  font-size: 15px;
-  color: #D9B471; }
-
-section {
-  font-family: "caviar";
-  font-size: 1.875rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-  section div {
+  .main-index .banner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 100%;
+    height: 1600px;
+    background-image: url("../assets/img/pole-banner-big.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .main-index .banner img {
+      width: 100%;
+      grid-row: 1;
+      grid-column: 6;
+      object-fit: contain;
+      order: 1;
+      padding: 3.125rem; }
+    .main-index .banner #page-name {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      color: #0D0D0D;
+      font-family: "kaushan";
+      font-size: 5rem;
+      justify-self: center;
+      align-self: center;
+      order: 2; }
+    .main-index .banner .slogan {
+      grid-row-start: 7;
+      grid-row-end: 8;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      color: #0D0D0D;
+      font-family: "ananda";
+      font-size: 2.5rem;
+      justify-self: left;
+      padding: 4.375rem; }
+  .main-index .article-who article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+  .main-index .article-who h1 {
+    font-family: 'caviar';
+    font-size: 2.5rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+  .main-index .article-who div {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    width: 100%; }
+    .main-index .article-who div img {
+      width: 25%;
+      height: auto;
+      object-fit: cover;
+      padding: 1.5625rem;
+      margin: 1.5625rem;
+      justify-content: left; }
+    .main-index .article-who div p {
+      font-family: "caviar";
+      font-size: 15px;
+      color: #D9B471;
+      max-width: 18.75rem; }
+  .main-index .article-who .section-disciplines h2 {
+    font-family: "caviar";
+    font-size: 1.875rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+  .main-index .article-who .section-disciplines article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px; }
-    section div div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 200px; }
-      section div div img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-bottom: 10px; }
-        section div div img p {
+    .main-index .article-who .section-disciplines article div {
+      text-align: center;
+      width: 200px;
+      height: 18.75rem;
+      margin: 10px; }
+      .main-index .article-who .section-disciplines article div img {
+        width: 100%;
+        height: auto; }
+        .main-index .article-who .section-disciplines article div img p {
           font-family: "marcellus";
           font-size: 1.25rem;
           color: #D9B471;
