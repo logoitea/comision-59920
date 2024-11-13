@@ -29,3 +29,13 @@
     color: #be964a;
     padding: 1.25rem;
 }
+
+@mixin card-container-estudios{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    width: 90%;
+    padding: 1.875rem;
+    margin: 1.25rem;
+    gap: 2.1875rem 0rem;
+}

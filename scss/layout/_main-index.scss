@@ -42,14 +42,12 @@
             padding: 4.375rem;
         }
     }
-    .article-who{    
+    .section-who{    
         article{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100%;
-        }
             h1{
                 @include h1;
             }
@@ -69,39 +67,83 @@
                 }
                 p{
                     font-family: "caviar";
-                    font-size: 15px;
+                    font-size: 1.5625rem;
                     color: #D9B471;
-                    max-width: 18.75rem
+                    width: 50%;
+                }
             }
-            }
+        }
+    }    
     .section-disciplines{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
         h2{
             @include h2;
+            margin: 1.875rem;
         }
-            article{
+        .article-disciplines{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 18.75rem;
+            flex-wrap: wrap;
+            .card-disciplines{
+                flex-direction: column;
+                width: 12.5rem;
+                gap: 2.5rem;
+                margin: 2.5rem;
+                text-align: center;
+                flex-wrap: wrap;
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                    object-fit: cover;
+                    flex-wrap: wrap;
+                }
+                p{
+                    font-family: "marcellus";
+                    font-size: 1.25rem; 
+                    color: #D9B471;
+                    text-align:center;
+                    justify-content: center;
+                }
+            }
+        }
+}
+}
+
+        /*
+        .card-container-disciplines{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            h2{
+                @include h2;
+            }
+            .card-disciplines{
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                padding: 20px;
-                div{
+                align-items: center;
+                width: 12.5rem;
+                img{
+                    width: 100%;
+                    height: auto;
+                p{
+                    font-family: "marcellus";
+                    font-size: 1.25rem; 
+                    color: #D9B471;
                     text-align: center;
-                    width: 200px;
-                    height: 18.75rem;
-                    margin: 10px;
-                    img{
-                        width: 100%;
-                        height: auto;
-                    p{
-                        font-family: "marcellus";
-                        font-size: 1.25rem; 
-                        color: #D9B471;
-                        text-align: center;
-                        justify-content: center;
-                    }
+                    justify-content: center;
+                }
                 }
             }
         }
     }
     }
-}
+}*/

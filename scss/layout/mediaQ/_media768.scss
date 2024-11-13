@@ -1,5 +1,8 @@
 @media(max-width: 768px){
 
+    .nav-bar{
+        flex-direction: column;
+    }
     .estuios-banner{
         max-width: 95%;
 }

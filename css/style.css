@@ -96,259 +96,295 @@ footer div .footer-social {
       font-size: 2.5rem;
       justify-self: left;
       padding: 4.375rem; }
-  .main-index .article-who article {
+  .main-index .section-who article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%; }
-  .main-index .article-who h1 {
-    font-family: 'caviar';
-    font-size: 2.5rem;
-    color: #D9B471;
-    text-align: center;
-    padding: 1.25rem; }
-  .main-index .article-who div {
+    justify-content: center; }
+    .main-index .section-who article h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem; }
+    .main-index .section-who article div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+      .main-index .section-who article div img {
+        width: 25%;
+        height: auto;
+        object-fit: cover;
+        padding: 1.5625rem;
+        margin: 1.5625rem;
+        justify-content: left; }
+      .main-index .section-who article div p {
+        font-family: "caviar";
+        font-size: 1.5625rem;
+        color: #D9B471;
+        width: 50%; }
+  .main-index .section-disciplines {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%; }
-    .main-index .article-who div img {
-      width: 25%;
-      height: auto;
-      object-fit: cover;
-      padding: 1.5625rem;
-      margin: 1.5625rem;
-      justify-content: left; }
-    .main-index .article-who div p {
-      font-family: "caviar";
-      font-size: 15px;
-      color: #D9B471;
-      max-width: 18.75rem; }
-  .main-index .article-who .section-disciplines h2 {
-    font-family: "caviar";
-    font-size: 1.875rem;
-    color: #D9B471;
-    text-align: center;
-    padding: 1.25rem; }
-  .main-index .article-who .section-disciplines article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 20px; }
-    .main-index .article-who .section-disciplines article div {
+    .main-index .section-disciplines h2 {
+      font-family: "caviar";
+      font-size: 1.875rem;
+      color: #D9B471;
       text-align: center;
-      width: 200px;
+      padding: 1.25rem;
+      margin: 1.875rem; }
+    .main-index .section-disciplines .article-disciplines {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       height: 18.75rem;
-      margin: 10px; }
-      .main-index .article-who .section-disciplines article div img {
-        width: 100%;
-        height: auto; }
-        .main-index .article-who .section-disciplines article div img p {
+      flex-wrap: wrap; }
+      .main-index .section-disciplines .article-disciplines .card-disciplines {
+        flex-direction: column;
+        width: 12.5rem;
+        gap: 2.5rem;
+        margin: 2.5rem;
+        text-align: center;
+        flex-wrap: wrap; }
+        .main-index .section-disciplines .article-disciplines .card-disciplines img {
+          width: 9.375rem;
+          height: 9.375rem;
+          object-fit: cover;
+          flex-wrap: wrap; }
+        .main-index .section-disciplines .article-disciplines .card-disciplines p {
           font-family: "marcellus";
           font-size: 1.25rem;
           color: #D9B471;
           text-align: center;
           justify-content: center; }
 
-.main-pole-sport h1 {
-  font-family: "caviar";
-  font-size: 2.5rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-  .main-pole-sport h1 section {
-    width: 100%;
-    height: 100%;
-    gap: 20px; }
-    .main-pole-sport h1 section div {
-      align-items: center;
-      padding: 6.25rem; }
-      .main-pole-sport h1 section div p {
-        font-family: "caviar";
-        font-size: 1.5625rem;
-        color: #D9B471; }
-
-.main-estudios-instrus {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  overflow: hidden; }
-  .main-estudios-instrus .estudios-banner h1 {
-    font-family: 'caviar';
+/*
+        .card-container-disciplines{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            h2{
+                @include h2;
+            }
+            .card-disciplines{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 12.5rem;
+                img{
+                    width: 100%;
+                    height: auto;
+                p{
+                    font-family: "marcellus";
+                    font-size: 1.25rem; 
+                    color: #D9B471;
+                    text-align: center;
+                    justify-content: center;
+                }
+                }
+            }
+        }
+    }
+    }
+}*/
+.main-pole-sport {
+  background-color: black; }
+  .main-pole-sport h1 {
+    font-family: "caviar";
     font-size: 2.5rem;
     color: #D9B471;
     text-align: center;
     padding: 1.25rem; }
-    .main-estudios-instrus .estudios-banner h1 div img {
-      width: 100%;
-      height: auto;
-      display: block; }
-  .main-estudios-instrus section h1 {
-    font-family: 'caviar';
-    font-size: 2.5rem;
-    color: #D9B471;
-    text-align: center;
-    padding: 1.25rem; }
-    .main-estudios-instrus section h1 img {
-      width: 100%;
-      height: auto;
-      display: block; }
-
-main section h2 {
-  font-family: "caviar";
-  font-size: 1.875rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-  main section h2 div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    padding: 1.875rem; }
-    main section h2 div .card-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3.125rem; }
-      main section h2 div .card-container h3 {
-        font-family: "caviar";
-        font-size: 1.5625rem;
-        color: #D9B471;
-        text-align: center;
-        gap: 1.25rem;
-        padding: 1.25rem; }
-        main section h2 div .card-container h3 p {
-          font-family: "marcellous";
-          font-size: .9375rem;
-          color: #D9B471;
-          text-align: center;
-          padding: 1.25rem; }
-
-main section .instrus-listado h2 {
-  font-family: "caviar";
-  font-size: 1.875rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-  main section .instrus-listado h2 div {
+  .main-pole-sport .card-container-pole-sport {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 1.875rem; }
-    main section .instrus-listado h2 div article div h3 {
+    flex-wrap: wrap; }
+    .main-pole-sport .card-container-pole-sport .card-pole {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 31.25rem;
+      margin: 6.25rem; }
+      .main-pole-sport .card-container-pole-sport .card-pole div img {
+        width: 40%;
+        object-fit: contain;
+        height: 50rem; }
+      .main-pole-sport .card-container-pole-sport .card-pole div p {
+        font-family: "marcellus";
+        font-size: 1.25rem;
+        color: #D9B471;
+        text-align: center;
+        justify-content: center;
+        width: 40%; }
+
+.main-estudios-instrus {
+  background-color: black;
+  width: 100%; }
+  .main-estudios-instrus .estudios-banner {
+    width: 100%;
+    display: block; }
+    .main-estudios-instrus .estudios-banner h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem;
+      margin-bottom: 1rem; }
+    .main-estudios-instrus .estudios-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; }
+
+.section-estudios div {
+  font-family: "caviar";
+  font-size: 1.875rem;
+  color: #D9B471;
+  text-align: center;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.section-estudios div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 95%; }
+  .section-estudios div .card-container-estudios div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    padding: 1.875rem;
+    margin: 1.25rem;
+    gap: 2.1875rem 0rem; }
+    .section-estudios div .card-container-estudios div h3 {
       font-family: "caviar";
       font-size: 1.5625rem;
       color: #D9B471;
       text-align: center;
       gap: 1.25rem;
       padding: 1.25rem; }
-      main section .instrus-listado h2 div article div h3 p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1.875rem;
-        width: 31.25rem; }
-
-main section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem; }
-  main section h1 {
-    font-family: 'caviar';
-    font-size: 2.5rem;
-    color: #D9B471;
-    text-align: center;
-    padding: 1.25rem; }
-    main section h1 div img {
-      width: 100%;
-      height: 50rem;
-      object-fit: cover; }
-
-main section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 1.25rem; }
-  main section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.25rem;
-    width: 12.5rem; }
-    main section div img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 10px; }
-      main section div img p {
-        font-family: "marcellus";
-        font-size: 1.25rem;
+      .section-estudios div .card-container-estudios div h3 p {
+        font-family: "marcellous";
+        font-size: .625rem;
         color: #D9B471;
         text-align: center;
-        justify-content: center; }
+        padding: 1.25rem; }
 
-main section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6.25rem; }
-  main section h1 {
-    font-family: 'caviar';
-    font-size: 2.5rem;
-    color: #D9B471;
-    text-align: center;
-    padding: 1.25rem; }
-    main section h1 div img {
-      width: 100%;
-      height: fit-content; }
-
-main section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
+.instrus-listado h2 {
   font-family: "caviar";
+  font-size: 1.875rem;
   color: #D9B471;
-  font-size: 1.25rem;
-  padding: .625rem 15.625rem 12.5rem 15.625rem; }
-  main section form {
-    width: 100%;
+  text-align: center;
+  padding: 1.25rem; }
+
+.instrus-listado .container-instrus div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 1.875rem;
+  margin-right: 1.875rem;
+  margin-left: 1.875rem;
+  width: 100%;
+  text-align: center;
+  height: 18.75rem; }
+  .instrus-listado .container-instrus div article div {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding: 1.25rem; }
-    main section form label {
-      text-align: left;
+    width: 100%; }
+    .instrus-listado .container-instrus div article div p {
+      font-family: "marcellous";
+      font-size: 1.875rem;
+      color: #D9B471;
+      margin: 3.125rem;
       padding: 1.25rem; }
-      main section form label input {
-        width: 50%;
-        border: 1px solid #D9B471;
-        background-color: #1a1a1a;
-        color: #D9B471;
-        font-family: "caviar", sans-serif;
-        font-size: 1rem;
-        align-items: left;
-        padding: 1.25rem;
-        margin: bottom .625rem; }
 
-main section form input[type="submit"] {
-  box-sizing: border-box;
-  padding-top: 3.125rem;
-  padding: 1.875rem;
-  background-color: #be964a;
-  color: #0D0D0D;
-  margin: 1.875rem 0rem; }
+.main-competencias {
+  background-color: black;
+  width: 100%; }
+  .main-competencias .section-competencias-banner {
+    gap: 2rem;
+    padding: 2rem; }
+    .main-competencias .section-competencias-banner h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem;
+      margin-bottom: 16px; }
+    .main-competencias .section-competencias-banner img {
+      width: 60%;
+      object-fit: contain; }
+  .main-competencias .section-competencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.25rem; }
+
+.main-contacto {
+  background-color: black;
+  width: 100%; }
+  .main-contacto .section-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6.25rem; }
+    .main-contacto .section-contacto h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem; }
+      .main-contacto .section-contacto h1 div img {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain; }
+  .main-contacto .section-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: "caviar";
+    color: #D9B471;
+    font-size: 1.875rem;
+    padding: .625rem 15.625rem 12.5rem 15.625rem; }
+    .main-contacto .section-formulario form {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem;
+      margin: 2.5rem; }
+      .main-contacto .section-formulario form label {
+        text-align: left;
+        padding: .625rem; }
+      .main-contacto .section-formulario form input {
+        border: .0625rem solid;
+        font-size: 1.875rem;
+        color: black; }
+      .main-contacto .section-formulario form .enviar {
+        margin-top: 2.1875rem;
+        background-color: #D9B471;
+        font-family: 'caviar';
+        padding: .625rem;
+        border: black;
+        border-radius: 1.875rem; }
 
 nav {
   background-color: #0D0D0D;
@@ -384,6 +420,8 @@ nav {
     max-width: 25rem; } }
 
 @media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; }
   .estuios-banner {
     max-width: 95%; }
   .article-who {
@@ -416,7 +454,7 @@ nav {
     min-width: 100px; } }
 
 @media (max-width: 425px) {
-  .navbar {
+  .nav-bar {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
