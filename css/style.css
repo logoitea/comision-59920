@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -56,117 +57,13 @@ footer div .footer-social {
       height: 100%;
       object-fit: contain; }
 
-main .banner {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  width: 100vw;
-  height: 1600px;
-  background-image: url("../assets/img/pole-banner-big.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  main .banner img {
-    width: 100%;
-    grid-row: 1;
-    grid-column: 6;
-    object-fit: contain;
-    order: 1;
-    padding: 3.125rem; }
-
-#page-name {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  color: #0D0D0D;
-  font-family: "kaushan";
-  font-size: 5rem;
-  justify-self: center;
-  align-self: center;
-  order: 2; }
-
-.banner p {
-  grid-row-start: 7;
-  grid-row-end: 8;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  color: #0D0D0D;
-  font-family: "ananda";
-  font-size: 2.5rem;
-  justify-self: left;
-  padding: 4.375rem; }
-
-main {
-  background-color: #0D0D0D; }
-  main section .article-who {
-    background-color: #0D0D0D; }
-    main section .article-who article {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%; }
-
-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%; }
-  div .pole-class {
-    width: 25%;
-    height: auto;
-    object-fit: cover;
-    padding: 1.5625rem;
-    margin: 1.5625rem;
-    justify-content: left; }
-
-section article {
-  font-family: "caviar";
-  font-size: 2.5rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-
-section article p {
-  font-family: "caviar";
-  font-size: 15px;
-  color: #D9B471; }
-
-section {
-  font-family: "caviar";
-  font-size: 1.875rem;
-  color: #D9B471;
-  text-align: center;
-  padding: 1.25rem; }
-
-.instrus-listado .container-instrus div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
-  padding: 1.875rem;
-  margin-right: 1.875rem;
-  margin-left: 1.875rem;
-  width: 100%;
-  text-align: center;
-  height: 18.75rem; }
-  .instrus-listado .container-instrus div article div {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-    .instrus-listado .container-instrus div article div p {
-      font-family: "marcellous";
-      font-size: 1.875rem;
-      color: #D9B471;
-      margin: 3.125rem;
-      padding: 1.25rem; }
-
 .main-competencias {
   background-color: black;
   width: 100%; }
   .main-competencias .section-competencias-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
     padding: 2rem; }
     .main-competencias .section-competencias-banner h1 {
@@ -234,6 +131,324 @@ section {
         padding: .625rem;
         border: black;
         border-radius: 1.875rem; }
+
+.main-estudios-instrus {
+  background-color: black;
+  width: 100%; }
+  .main-estudios-instrus .estudios-banner {
+    width: 100%;
+    display: block; }
+    .main-estudios-instrus .estudios-banner h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem;
+      margin-bottom: 1rem; }
+    .main-estudios-instrus .estudios-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; }
+
+.section-estudios div {
+  font-family: "caviar";
+  font-size: 1.875rem;
+  color: #D9B471;
+  text-align: center;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.section-estudios div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 95%; }
+  .section-estudios div .card-container-estudios div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    padding: 1.875rem;
+    margin: 1.25rem;
+    gap: 2.1875rem 0rem; }
+    .section-estudios div .card-container-estudios div h3 {
+      font-family: "caviar";
+      font-size: 1.5625rem;
+      color: #D9B471;
+      text-align: center;
+      gap: 1.25rem;
+      padding: 1.25rem; }
+      .section-estudios div .card-container-estudios div h3 p {
+        font-family: "marcellous";
+        font-size: .625rem;
+        color: #D9B471;
+        text-align: center;
+        padding: 1.25rem; }
+
+.instrus-listado div {
+  font-family: "caviar";
+  font-size: 1.875rem;
+  color: #D9B471;
+  text-align: center;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.instrus-listado .container-instrus div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 1.875rem;
+  margin-right: 1.875rem;
+  margin-left: 1.875rem;
+  width: 31.25rem; }
+  .instrus-listado .container-instrus div article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 31.25rem; }
+    .instrus-listado .container-instrus div article div p {
+      font-family: "marcellous";
+      font-size: 1.875rem;
+      color: #D9B471;
+      margin: 3.125rem;
+      padding: 1.25rem; }
+
+.main-index {
+  background-color: #0D0D0D; }
+  .main-index .banner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 100%;
+    height: 1600px;
+    background-image: url("../assets/img/pole-banner-big.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .main-index .banner img {
+      width: 100%;
+      grid-row: 1;
+      grid-column: 6;
+      object-fit: contain;
+      order: 1;
+      padding: 3.125rem; }
+    .main-index .banner #page-name {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      color: #0D0D0D;
+      font-family: "kaushan";
+      font-size: 5rem;
+      justify-self: center;
+      align-self: center;
+      order: 2; }
+    .main-index .banner .slogan {
+      grid-row-start: 7;
+      grid-row-end: 8;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      color: #0D0D0D;
+      font-family: "ananda";
+      font-size: 2.5rem;
+      justify-self: left;
+      padding: 4.375rem; }
+  .main-index .section-who article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main-index .section-who article h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem; }
+    .main-index .section-who article div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+      .main-index .section-who article div img {
+        width: 25%;
+        height: auto;
+        object-fit: cover;
+        padding: 1.5625rem;
+        margin: 1.5625rem;
+        justify-content: left; }
+      .main-index .section-who article div p {
+        font-family: "caviar";
+        font-size: 1.5625rem;
+        color: #D9B471;
+        width: 50%; }
+  .main-index .section-disciplines {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; }
+    .main-index .section-disciplines h2 {
+      font-family: "caviar";
+      font-size: 1.875rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem;
+      margin: 1.875rem; }
+    .main-index .section-disciplines .article-disciplines {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 18.75rem;
+      flex-wrap: wrap; }
+      .main-index .section-disciplines .article-disciplines .card-disciplines {
+        flex-direction: column;
+        width: 12.5rem;
+        gap: 2.5rem;
+        margin: 2.5rem;
+        text-align: center;
+        flex-wrap: wrap; }
+        .main-index .section-disciplines .article-disciplines .card-disciplines img {
+          width: 9.375rem;
+          height: 9.375rem;
+          object-fit: cover;
+          flex-wrap: wrap; }
+        .main-index .section-disciplines .article-disciplines .card-disciplines p {
+          font-family: "marcellus";
+          font-size: 1.25rem;
+          color: #D9B471;
+          text-align: center;
+          justify-content: center; }
+
+/*
+        .card-container-disciplines{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            h2{
+                @include h2;
+            }
+            .card-disciplines{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 12.5rem;
+                img{
+                    width: 100%;
+                    height: auto;
+                p{
+                    font-family: "marcellus";
+                    font-size: 1.25rem; 
+                    color: #D9B471;
+                    text-align: center;
+                    justify-content: center;
+                }
+                }
+            }
+        }
+    }
+    }
+}*/
+.main-pole-sport {
+  background-color: black;
+  /*    .card-container-pole-sport {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card-pole {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 31.25rem;
+            margin: 6.25rem;
+
+            div {
+                img {
+                    width: 40%;
+                    object-fit: contain;
+                    height: 50rem;
+                }
+
+                p {
+                    font-family: "marcellus";
+                    font-size: 1.25rem;
+                    color: #D9B471;
+                    text-align: center;
+                    justify-content: center;
+                    width: 40%;
+                }
+            }
+        }
+    }*/ }
+  .main-pole-sport h1 {
+    font-family: "caviar";
+    font-size: 2.5rem;
+    color: #D9B471;
+    text-align: center;
+    padding: 1.25rem; }
+  .main-pole-sport .card-container-pole-sport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .main-pole-sport .card-container-pole-sport .card-pole {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* Centra verticalmente la imagen y el texto */
+      width: 100%;
+      height: auto;
+      margin: 3rem 0;
+      /* Margen superior e inferior para separar las tarjetas */
+      gap: 2rem;
+      /* Espaciado entre la imagen y el texto */ }
+      .main-pole-sport .card-container-pole-sport .card-pole .image-container {
+        flex: 1;
+        /* Toma proporcionalmente el espacio necesario */
+        display: flex;
+        justify-content: flex-start;
+        /* Asegura que la imagen esté a la izquierda */ }
+        .main-pole-sport .card-container-pole-sport .card-pole .image-container img {
+          width: 100%;
+          max-width: 300px;
+          /* Ajusta este valor según lo necesites */
+          height: auto;
+          /* Mantiene la proporción de la imagen */
+          object-fit: contain;
+          margin: 6.25rem;
+          gap: 1.875rem; }
+      .main-pole-sport .card-container-pole-sport .card-pole .text-container {
+        flex: 2;
+        /* Da más espacio al texto */
+        display: flex;
+        align-items: center;
+        /* Centra verticalmente */
+        justify-content: flex-start;
+        /* Alinea el texto a la izquierda */ }
+        .main-pole-sport .card-container-pole-sport .card-pole .text-container p {
+          font-family: "Marcellus", serif;
+          font-size: 1.25rem;
+          color: #D9B471;
+          margin: 6.25rem;
+          /* Elimina márgenes predeterminados */
+          text-align: left;
+          gap: 1.875rem; }
 
 main section {
   display: flex;

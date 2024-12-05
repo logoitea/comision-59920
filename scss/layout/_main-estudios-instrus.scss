@@ -1,80 +1,95 @@
-.main-estudios-instrus{
+.main-estudios-instrus {
     background-color: black;
     width: 100%;
-    .estudios-banner{
+
+    .estudios-banner {
         width: 100%;
         display: block;
-        h1{
+
+        h1 {
             @include h1;
             margin-bottom: 1rem;
         }
-        img{
+
+        img {
             width: 100%;
             height: auto;
             display: block;
             object-fit: cover;
         }
     }
+}
+
+.section-estudios {
+    div {
+        @include h2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .section-estudios{    
-        div{
-            @include h2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        div{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            width: 95%;
-            .card-container-estudios{
-                div {
-                    @include card-container-estudios;
-                        h3 {
-                            @include h3;
-                        p {
-                            font-family: "marcellous";
-                            font-size: .625rem;
-                            color: #D9B471;
-                            text-align: center;
-                            padding: 1.25rem;
-                        }
-                        }
-                    }
-            }            
-        }
-    }
-    .instrus-listado{
-        h2{
-            @include h2
-        }
-        .container-instrus{
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 95%;
+
+        .card-container-estudios {
             div {
-                display: flex;
-                flex-direction: row;
-                justify-content:space-around;
-                gap: 20px;
-                padding: 1.875rem;
-                margin-right: 1.875rem;
-                margin-left: 1.875rem;
-                width: 100%;
-                text-align: center;
-                height: 18.75rem;
-                article {
-                    div {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        p{
-                            font-family: "marcellous";
-                            font-size: 1.875rem;
-                            color: #D9B471;
-                            margin: 3.125rem;
-                            padding: 1.25rem;
-                        }
-                        }
+                @include card-container-estudios;
+
+                h3 {
+                    @include h3;
+
+                    p {
+                        font-family: "marcellous";
+                        font-size: .625rem;
+                        color: #D9B471;
+                        text-align: center;
+                        padding: 1.25rem;
                     }
+                }
             }
         }
     }
+}
+
+.instrus-listado {
+    div {
+        @include h2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-instrus {
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding: 1.875rem;
+            margin-right: 1.875rem;
+            margin-left: 1.875rem;
+            width: 31.25rem;
+
+            article {
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 31.25rem;
+
+                    p {
+                        font-family: "marcellous";
+                        font-size: 1.875rem;
+                        color: #D9B471;
+                        margin: 3.125rem;
+                        padding: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
