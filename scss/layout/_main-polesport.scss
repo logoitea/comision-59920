@@ -1,28 +1,42 @@
-main{
+.main-pole-sport{
+    background-color: black;
     h1{
-        @include h1;
+        font-family: "caviar";
+        font-size: 2.5rem;
+        color: #D9B471;
+        text-align: center;
+        padding: 1.25rem;
     }
-}
-main{
-    section{
-        width: 100%;
-        height: 100%;
-        gap: 20px;
-        div{
-            align-items: center; 
-            padding: 6.25rem;
-        }
-    }
-}
-
-main{
-    section{
-        div{
-            p{
-                font-family: "caviar";
-                font-size: 1.5625rem;
-                color: #D9B471;
+        .card-container-pole-sport{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .card-pole{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 31.25rem;
+                margin: 6.25rem;
+                div{
+                    img{
+                        width: 40%;
+                        object-fit: contain;
+                        height: 50rem;
+                    }
+                    p{
+                        font-family: "marcellus";
+                        font-size: 1.25rem; 
+                        color: #D9B471;
+                        text-align:center;
+                        justify-content: center;
+                        width: 40%;
+                    }
+                }
             }
         }
     }
-}
+

@@ -123,7 +123,7 @@ div {
     justify-content: left; }
 
 section article {
-  font-family: 'caviar';
+  font-family: "caviar";
   font-size: 2.5rem;
   color: #D9B471;
   text-align: center;
@@ -135,33 +135,105 @@ section article p {
   color: #D9B471; }
 
 section {
-  font-family: 'caviar';
+  font-family: "caviar";
   font-size: 1.875rem;
   color: #D9B471;
   text-align: center;
   padding: 1.25rem; }
-  section div {
+
+.instrus-listado .container-instrus div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 1.875rem;
+  margin-right: 1.875rem;
+  margin-left: 1.875rem;
+  width: 100%;
+  text-align: center;
+  height: 18.75rem; }
+  .instrus-listado .container-instrus div article div {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .instrus-listado .container-instrus div article div p {
+      font-family: "marcellous";
+      font-size: 1.875rem;
+      color: #D9B471;
+      margin: 3.125rem;
+      padding: 1.25rem; }
+
+.main-competencias {
+  background-color: black;
+  width: 100%; }
+  .main-competencias .section-competencias-banner {
+    gap: 2rem;
+    padding: 2rem; }
+    .main-competencias .section-competencias-banner h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem;
+      margin-bottom: 16px; }
+    .main-competencias .section-competencias-banner img {
+      width: 60%;
+      object-fit: contain; }
+  .main-competencias .section-competencias {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 1.25rem; }
+
+.main-contacto {
+  background-color: black;
+  width: 100%; }
+  .main-contacto .section-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 20px; }
-    section div div {
+    padding: 6.25rem; }
+    .main-contacto .section-contacto h1 {
+      font-family: 'caviar';
+      font-size: 2.5rem;
+      color: #D9B471;
+      text-align: center;
+      padding: 1.25rem; }
+      .main-contacto .section-contacto h1 div img {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain; }
+  .main-contacto .section-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: "caviar";
+    color: #D9B471;
+    font-size: 1.875rem;
+    padding: .625rem 15.625rem 12.5rem 15.625rem; }
+    .main-contacto .section-formulario form {
+      width: 30%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      width: 200px; }
-      section div div img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-bottom: 10px; }
-        section div div img p {
-          font-family: "marcellus";
-          font-size: 1.25rem;
-          color: #D9B471;
-          text-align: center;
-          justify-content: center; }
+      padding: 2.5rem;
+      margin: 2.5rem; }
+      .main-contacto .section-formulario form label {
+        text-align: left;
+        padding: .625rem; }
+      .main-contacto .section-formulario form input {
+        border: .0625rem solid;
+        font-size: 1.875rem;
+        color: black; }
+      .main-contacto .section-formulario form .enviar {
+        margin-top: 2.1875rem;
+        background-color: #D9B471;
+        font-family: 'caviar';
+        padding: .625rem;
+        border: black;
+        border-radius: 1.875rem; }
 
 main section {
   display: flex;
@@ -385,6 +457,8 @@ nav {
     max-width: 25rem; } }
 
 @media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; }
   .estuios-banner {
     max-width: 95%; }
   .article-who {
@@ -417,7 +491,7 @@ nav {
     min-width: 100px; } }
 
 @media (max-width: 425px) {
-  .navbar {
+  .nav-bar {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
