@@ -1,42 +1,94 @@
-.main-pole-sport{
+.main-pole-sport {
     background-color: black;
-    h1{
+
+    h1 {
         font-family: "caviar";
         font-size: 2.5rem;
         color: #D9B471;
         text-align: center;
         padding: 1.25rem;
     }
-        .card-container-pole-sport{
+
+/*    .card-container-pole-sport {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card-pole {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            flex-direction: row;
+            text-align: center;
             flex-wrap: wrap;
-            .card-pole{
+            width: 100%;
+            height: 31.25rem;
+            margin: 6.25rem;
+
+            div {
+                img {
+                    width: 40%;
+                    object-fit: contain;
+                    height: 50rem;
+                }
+
+                p {
+                    font-family: "marcellus";
+                    font-size: 1.25rem;
+                    color: #D9B471;
+                    text-align: center;
+                    justify-content: center;
+                    width: 40%;
+                }
+            }
+        }
+    }*/
+    .card-container-pole-sport {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        .card-pole {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Centra verticalmente la imagen y el texto */
+            width: 100%;
+            height: auto;
+            margin: 3rem 0; /* Margen superior e inferior para separar las tarjetas */
+            gap: 2rem; /* Espaciado entre la imagen y el texto */
+    
+            .image-container {
+                flex: 1; /* Toma proporcionalmente el espacio necesario */
                 display: flex;
-                flex-direction: row;
-                text-align: center;
-                flex-wrap: wrap;
-                width: 100%;
-                height: 31.25rem;
-                margin: 6.25rem;
-                div{
-                    img{
-                        width: 40%;
-                        object-fit: contain;
-                        height: 50rem;
-                    }
-                    p{
-                        font-family: "marcellus";
-                        font-size: 1.25rem; 
-                        color: #D9B471;
-                        text-align:center;
-                        justify-content: center;
-                        width: 40%;
-                    }
+                justify-content: flex-start; /* Asegura que la imagen esté a la izquierda */
+                
+                img {
+                    width: 100%;
+                    max-width: 300px; /* Ajusta este valor según lo necesites */
+                    height: auto; /* Mantiene la proporción de la imagen */
+                    object-fit: contain;
+                    margin: 6.25rem;
+                    gap: 1.875rem;
+                }
+            }
+    
+            .text-container {
+                flex: 2; /* Da más espacio al texto */
+                display: flex;
+                align-items: center; /* Centra verticalmente */
+                justify-content: flex-start; /* Alinea el texto a la izquierda */
+                
+                p {
+                    font-family: "Marcellus", serif;
+                    font-size: 1.25rem;
+                    color: #D9B471;
+                    margin: 6.25rem; /* Elimina márgenes predeterminados */
+                    text-align: left;
+                    gap: 1.875rem;
                 }
             }
         }
     }
-
+}

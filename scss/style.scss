@@ -5,13 +5,13 @@
 @import "./base/resets";
 @import "./base/tipografias";
 
-@import "./layout/header";
 @import "./layout/footer";
-@import "./layout/main-index";
-@import "./layout/main-polesport";
-@import "./layout/main-estudios-instrus";
+@import "./layout/header";
 @import "./layout/main-competencias";
 @import "./layout/main-contacto";
+@import "./layout/main-estudios-instrus";
+@import "./layout/main-index";
+@import "./layout/main-polesport";
 
 @import "./components/bootstrap";
 @import "./components/cards";
